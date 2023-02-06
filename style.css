@@ -1,0 +1,120 @@
+:root {
+  /* Primary */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --blue: hsl(213, 19%, 18%);
+  --dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--dark-blue);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 40rem;
+  background-color: var(--blue);
+  padding: 2.4rem;
+  border-radius: 1.8rem;
+}
+
+.card-after {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.selected-rating {
+  font-size: 1.5rem;
+  color: var(--orange);
+  background-color: rgba(18, 20, 23, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+.star {
+  background-color: var(--dark-blue);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.primary-heading {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.description {
+  color: var(--medium-grey);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating button {
+  background-color: var(--dark-blue);
+  opacity: 40%;
+  color: #fff;
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  cursor: pointer;
+}
+
+.rating button:active,
+.rating button:hover,
+.rating button:focus {
+  background-color: var(--orange);
+  color: #fff;
+  opacity: 100%;
+}
+
+.submit {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+
+.submit:active,
+.submit:hover {
+  background-color: #fff;
+  color: var(--orange);
+}
