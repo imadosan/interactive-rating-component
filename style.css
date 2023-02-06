@@ -5,7 +5,7 @@
   /* Neutral */
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
-  --blue: hsl(213, 19%, 18%);
+  --blue: hsl(213, 20%, 18%);
   --dark-blue: hsl(216, 12%, 8%);
 }
 
@@ -29,13 +29,18 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
 }
 
 .card {
-  width: 40rem;
-  background-color: var(--blue);
-  padding: 2.4rem;
-  border-radius: 1.8rem;
+  width: 41.2rem;
+  background: radial-gradient(
+    farthest-side at top center,
+    hsl(215deg, 17%, 15%),
+    hsl(215deg, 27%, 12%)
+  );
+  padding: 3.2rem;
+  border-radius: 2.6rem;
 }
 
 .card-after {
@@ -45,23 +50,27 @@ main {
   text-align: center;
 }
 
+.card-after img {
+  margin: 2.4rem;
+}
+
 .selected-rating {
   font-size: 1.5rem;
   color: var(--orange);
-  background-color: rgba(18, 20, 23, 0.4);
+  background-color: var(--blue);
   padding: 1rem 2rem;
   border-radius: 2rem;
 }
 
 .star {
-  background-color: var(--dark-blue);
-  padding: 1rem;
+  background-color: var(--blue);
+  padding: 1.7rem;
   border-radius: 50%;
 }
 
 .primary-heading {
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   font-weight: 700;
   margin: 2rem 0;
 }
@@ -70,7 +79,7 @@ main {
   color: var(--medium-grey);
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2.6rem;
+  line-height: 1.5;
   margin-bottom: 2rem;
 }
 
@@ -80,15 +89,14 @@ main {
 }
 
 .rating button {
-  background-color: var(--dark-blue);
-  opacity: 40%;
-  color: #fff;
+  background-color: var(--blue);
+  color: var(--light-grey);
   border: none;
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
   font-weight: 700;
-  margin-bottom: 1.6rem;
+  margin-bottom: 4rem;
   cursor: pointer;
 }
 
@@ -102,13 +110,15 @@ main {
 
 .submit {
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 1.3rem 2rem;
   font-size: 1.5rem;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
   background-color: var(--orange);
   color: #fff;
   border: none;
-  border-radius: 1.6rem;
+  border-radius: 2rem;
   cursor: pointer;
   transition: all 0.25s ease-in;
 }
